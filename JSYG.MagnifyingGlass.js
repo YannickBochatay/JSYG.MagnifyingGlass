@@ -151,9 +151,7 @@
      * @returns {MagnifyingGlass}
      */
     MagnifyingGlass.prototype.hide = function() {
-        
-        console.log("hide");
-        
+                
         new JSYG(this.container).detach();
         this.display = false;
         this.trigger('hide',this.node);
